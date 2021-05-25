@@ -3,9 +3,9 @@ var montharray=new Array("1","2","3","4","5","6","7","8","9","10","11","12")
 
 function getthedate(){ 
 var mydate=new Date() 
-var year=mydate.getYear() 
+var year=mydate.getFullYear() 
 if (year<2000) 
-year="19"+year 
+year="20"+year 
 var day=mydate.getDay() 
 var month=mydate.getMonth() 
 var daym=mydate.getDate() 
@@ -14,9 +14,9 @@ daym="0"+daym
 var hours=mydate.getHours() 
 var minutes=mydate.getMinutes() 
 var seconds=mydate.getSeconds() 
-var dn="<br><br>Chúc Thảo Một Buổi Sáng Sôi Động & Vui Vẻ...!"
+var dn="<br><br>Chúc Ngân Một Buổi Sáng Sôi Động & Vui Vẻ...!"
 if (hours>11){ 
-dn="<br><br>Chúc Thảo Một Buổi Chiều Ấm Áp & Một Buổi Tối Hạnh Phúc...!"
+dn="<br><br>Chúc Ngân Một Buổi Chiều Ấm Áp & Một Buổi Tối Hạnh Phúc...!"
 hours=hours-12
 } 
 if (hours==0) 
